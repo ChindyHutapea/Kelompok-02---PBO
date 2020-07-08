@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="1069.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditInformasiController">
+   <children>
+      <Pane prefHeight="608.0" prefWidth="155.0" style="-fx-background-color: #B0E0E6;">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/covid2.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="-1.0" layoutY="307.0" mnemonicParsing="false" onAction="#onClickKelolaKasusPDP" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #87CEFA;" text="Kelola Kasus PDP" />
+         </children>
+      </Pane>
+      <Button layoutY="93.0" mnemonicParsing="false" onAction="#onClickDashboard" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #87CEFA;" text="Dashboard" />
+      <Button layoutY="144.0" mnemonicParsing="false" onAction="#onClickKelolaMasyarakat" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #87CEFA;" text="Kelola Masyarakat" />
+      <Button layoutX="-1.0" layoutY="197.0" mnemonicParsing="false" onAction="#onClickKelolaInformasi" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #87CEFA;" text="Kelola Informasi" />
+      <Button layoutX="674.0" layoutY="342.0" mnemonicParsing="false" onAction="#onClickEditInformasi" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #32CD32;" text="Update" textFill="WHITE">
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Pane layoutX="155.0" prefHeight="46.0" prefWidth="1218.0" style="-fx-background-color: #E6E6FA;" />
+      <HBox layoutX="1234.0" layoutY="26.0" opacity="0.91" prefHeight="40.0" prefWidth="138.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <GridPane prefHeight="25.0" prefWidth="107.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="42.20001220703125" minWidth="3.7999870777130127" prefWidth="3.7999870777130127" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.20001292228699" minWidth="10.0" prefWidth="90.20001292228699" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="17.599996948242186" minHeight="3.200003051757811" prefHeight="3.200003051757811" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.999996948242185" minHeight="10.0" prefHeight="35.999996948242185" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="lbOut" onMouseClicked="#menuOutClick" prefHeight="10.0" prefWidth="90.0" text="Logout" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbExit" onMouseClicked="#menuExitClick" prefHeight="15.0" prefWidth="88.0" text="Exit" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Text layoutX="161.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Informasi" wrappingWidth="247.19997711181645">
+         <font>
+            <Font name="Segoe UI Symbol" size="22.0" />
+         </font>
+      </Text>
+      <Line endX="1265.264404296875" layoutX="101.0" layoutY="89.0" startX="-100.0" strokeWidth="5.0" />
+      <Pane layoutX="595.0" layoutY="163.0" prefHeight="154.0" prefWidth="310.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Label layoutX="13.0" layoutY="13.0" prefHeight="17.0" prefWidth="75.0" text="Tanggal" />
+            <Label layoutX="13.0" layoutY="55.0" prefHeight="17.0" prefWidth="75.0" text="Judul" />
+            <Label layoutX="13.0" layoutY="99.0" prefHeight="17.0" prefWidth="75.0" text="Isi Info" />
+            <TextField fx:id="tf_tanggal" layoutX="101.0" layoutY="11.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="tf_judul" layoutX="102.0" layoutY="53.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="tf_isiInfo" layoutX="101.0" layoutY="96.0" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+      </Pane>
+      <Text fill="#ac2a2e" layoutX="639.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Informasi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="-1.0" layoutY="253.0" mnemonicParsing="false" onAction="#onClickKelolaKasusODP" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #87CEFA;" text="Kelola Kasus ODP" />
+   </children>
+</AnchorPane>

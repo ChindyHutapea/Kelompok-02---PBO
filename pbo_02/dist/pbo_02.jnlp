@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="pbo_02.jnlp">
+  <information>
+    <title>pbo_02</title>
+    <vendor>gabri</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\converter-gson-2.9.0.jar" size="4618" download="eager" />
+    <jar href="lib\gson-2.8.5.jar" size="241622" download="eager" />
+    <jar href="lib\java-json.jar" size="84697" download="eager" />
+    <jar href="lib\okhttp-3.14.9.jar" size="430488" download="eager" />
+    <jar href="lib\okio-1.17.2.jar" size="91980" download="eager" />
+    <jar href="lib\retrofit-2.9.0.jar" size="125435" download="eager" />
+    <jar href="pbo_02.jar" size="1191176" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="pbo_02" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pbo_02.Pbo_02"  name="pbo_02" />
+  <update check="always"/>
+</jnlp>
